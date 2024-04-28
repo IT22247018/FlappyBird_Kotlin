@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="286dp"
+        android:layout_height="568dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="255dp"
+        android:text="Starting the Game: When you open Flappy Bird, you'll be greeted with the title screen. Tap start button on the screen to start the game.  Flying the Bird: Once the game starts, you control a bird that is constantly flying to the right. Your job is to keep the bird airborne by tapping the screen. Each tap makes the bird flap its wings and ascend a little bit.  Avoiding Obstacles: The game is filled with green pipes that the bird must navigate through. The pipes have openings for the bird to fly through. Your goal is to guide the bird safely through these openings without hitting the pipes. If the bird collides with a pipe, the game ends. Scoring Points: Each time the bird successfully passes through a pair of pipes, you earn one point. The more pipes you pass, the higher your score.  Game Over: The game ends when the bird collides with a pipe or if it falls to the ground. After that, your score is displayed along with an option to play again. "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="51dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="exit_button_description"
+        android:src="@drawable/back"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

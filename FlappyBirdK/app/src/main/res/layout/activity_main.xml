@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+   <com.example.flappybird_k.GameView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/gv"/>
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_score"
+        android:textColor="#002247"
+        android:textSize="50sp"
+        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_start"
+        android:text="Start"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        >
+
+    </Button>
+
+    <ImageButton
+        android:id="@+id/btn_exit"
+        android:layout_width="53dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="118dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="exit_button_description"
+        android:src="@drawable/baseline_close_24"
+        android:text="Button" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_game_over"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Game Over"
+            android:textColor="#ff00"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/txt_score_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="0"
+            android:textColor="#ff00" />
+
+        <TextView
+            android:id="@+id/txt_best_score"
+            android:layout_width="178dp"
+            android:layout_height="69dp"
+            android:layout_above="@+id/textView"
+            android:layout_below="@id/txt_score_over"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="280dp"
+            android:text="Best Score: 0"
+            android:textColor="#ff00"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_game_over"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Touch Screen to Continues"
+            android:textColor="#ff5722"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_info"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="102dp"
+            android:layout_toStartOf="@+id/txt_score_over"
+            android:background="@android:color/transparent"
+            android:contentDescription="exit_button_description"
+            android:padding="5dp"
+            android:src="@drawable/info"
+            android:text="Exit" />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
+</RelativeLayout>
